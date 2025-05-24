@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리저스 유중 개발 센터 인포그래픽</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f0f2f5; /* Slightly off-white background for a softer look */
+        }
+        .infographic-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Creative gradient */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .infographic-header h1 {
+            font-size: 2.5rem; /* 40px */
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .infographic-header p {
+            font-size: 1.125rem; /* 18px */
+            opacity: 0.9;
+        }
+        .section-card {
+            background-color: white;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+        .section-title {
+            font-size: 1.75rem; /* 28px */
+            font-weight: 700;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            color: #333; /* Darker text for titles */
+        }
+        .section-title svg {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+            color: #764ba2; /* Icon color matching the gradient */
+        }
+        .content-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 1rem; /* 16px */
+            color: #555; /* Slightly lighter text for content */
+        }
+        .content-item svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            color: #667eea; /* Icon color matching the gradient */
+            flex-shrink: 0;
+        }
+        .highlight {
+            color: #764ba2;
+            font-weight: 700;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        .art-focus-banner {
+            background-color: #fdf6e3; /* Soft yellow, associated with creativity */
+            border: 2px solid #f1c40f; /* Gold border */
+            color: #8c6b1f; /* Darker text for readability */
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 24px;
+            font-size: 1.125rem;
+        }
+        .art-focus-banner strong {
+            color: #e67e22; /* Orange for emphasis */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .infographic-header h1 {
+                font-size: 2rem; /* 32px */
+            }
+            .infographic-header p {
+                font-size: 1rem; /* 16px */
+            }
+            .section-title {
+                font-size: 1.5rem; /* 24px */
+            }
+            .section-title svg {
+                width: 28px;
+                height: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="infographic-header">
+        <h1>리저스 유중 개발 센터</h1>
+        <p>예술과 비즈니스가 공존하는 창조적 허브</p>
+    </div>
+
+    <div class="container mx-auto p-4 md:p-8">
+        <div class="grid-container">
+
+            <div class="section-card">
+                <h2 class="section-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.125-.504 1.125-1.125V14.25m-17.25 4.5h9.75m0 0V9m0 0H3.375M14.25 9l-2.25-2.25M14.25 9l2.25-2.25m0 0V3.375c0-.621-.504-1.125-1.125-1.125H9.75M14.25 9H9.75" />
+                    </svg>
+                    쾌속 교통망
+                </h2>
+                <div class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 0 1 9 9v.375M10.125 2.25A3.375 3.375 0 0 1 13.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 0 1 3.375 3.375M9 15l2.25 2.25L15 12" />
+                    </svg>
+                    <p><span class="highlight">7호선 내방역</span> 도보 약 5-7분</p>
+                </div>
+                <div class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                    <p><span class="highlight">2호선 방배역</span> 차량 약 5분</p>
+                </div>
+                <div class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-3.75 2.25M12 13.5l-3.75 2.25L12 18l3.75-2.25L12 13.5m0 0V9m0 4.5V21m0-12H2.25m9.75 0h9.75" />
+                    </svg>
+                    <p><span class="highlight">동작/반포대교</span> 차량 약 10-20분</p>
+                </div>
+                 <div class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m0 0v2.25m0-2.25h1.5m1.5 0V6.75m0 0H9m1.5 0H12m0 0v2.25m0 2.25V15m0 0V6.75m0 0H9.75M12 9.75h1.5M13.5 9.75H12M12 9.75V15m0 0V9.75m0 0H4.5m3.75 0H12m0 0V15m0-9.75v.001M12 15v2.25m0-2.25H4.5m7.5 0h7.5" />
+                    </svg>
+                    <p>올림픽대로 및 강변북로 진입 용이</p>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2 class="section-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12M3 3v12M3 3l12 12" />
+                    </svg>
+                    강남 비즈니스 허브
+                </h2>
+                <div class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                    </svg>
+                    <p><span class="highlight">강남역/역삼역</span> 차량 약 15-25분</p>
+                </div>
+                <div class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m0 0H9m3 0h3m-3-3v-3m0 0H9m3 0h3m-3-3V9m0 0H9m3 0h3m-3-3V3m0 0H9m3 0h3m-3 18v-3m0 0h-3m3 0h3m-3-3H9m3 0h3m0 0V9m0 0H9m3 0h3m-3-3V3" />
+                    </svg>
+                    <p><span class="highlight">서초 법조타운</span> 차량 약 10-15분</p>
+                </div>
+                <div class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h6.75M9 12h6.75M9 17.25h6.75M9 21V3" />
+                    </svg>
+                    <p><span class="highlight">고속터미널</span> 차량 약 10-15분</p>
+                </div>
+                 <div class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6A1.125 1.125 0 0 1 2.25 10.875v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z" />
+                    </svg>
+                    <p><span class="highlight">코엑스 (삼성역)</span> 차량 약 20-30분</p>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2 class="section-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.287 8.287 0 0 0 3.962-2.555A8.325 8.325 0 0 1 15.362 5.214Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468V5.25a3.75 3.75 0 0 1-.495 7.468Z" />
+                    </svg>
+                    예술 & 문화 충전소
+                </h2>
+                <div class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M2.25 12l8.954 8.955c.44.439 1.152.439 1.591 0L21.75 12M2.25 12h19.5" />
+                    </svg>
+                    <p><span class="highlight">유중아트센터</span> (센터 내 위치)</p>
+                </div>
+                <div class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                    </svg>
+                    <p>서리풀공원 & 몽마르뜨공원</p>
+                </div>
+                <div class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h6m3-3.75l3 3m0 0l-3 3m3-3H6.75m16.5-9V18A2.25 2.25 0 0 1 21 20.25H5.25A2.25 2.25 0 0 1 3 18V6A2.25 2.25 0 0 1 5.25 3.75h5.085c.482 0 .94.195 1.274.528l2.66 2.661c.333.334.79.528 1.273.528H21" />
+                    </svg>
+                    <p>국립국악원 & 예술의전당 (차량 10-15분)</p>
+                </div>
+                <div class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.452-2.452L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.452-2.452L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.452 2.452L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.452 2.452Z" />
+                    </svg>
+                    <p>방배동 카페골목 (개성있는 카페 & 갤러리)</p>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2 class="section-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                    다채로운 맛집
+                </h2>
+                <div class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    <p>정갈한 <span class="highlight">한식</span>부터 트렌디한 <span class="highlight">양식</span>, <span class="highlight">일식</span>까지</p>
+                </div>
+                <div class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+                    </svg>
+                    <p>예술적 영감을 주는 분위기의 <span class="highlight">카페 & 베이커리</span></p>
+                </div>
+                <div class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    <p>입주사들의 만족스러운 <span class="highlight">점심 & 저녁</span> 해결</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card mt-8"> <h2 class="section-title">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.324h5.372a.562.562 0 0 1 .329.988l-4.203 3.075a.563.563 0 0 0-.182.557l1.528 4.995a.562.562 0 0 1-.82.61l-4.203-3.075a.563.563 0 0 0-.65 0L6.08 19.16a.562.562 0 0 1-.819-.61l1.528-4.995a.563.563 0 0 0-.182-.557l-4.203-3.075a.562.562 0 0 1 .329-.988h5.372a.563.563 0 0 0 .475-.324L11.48 3.5Z" />
+                </svg>
+                리저스 유중만의 특별함
+            </h2>
+            <ul class="list-none space-y-3">
+                <li class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    <p><span class="highlight">예술 중심 특화 환경:</span> 유중아트센터 운영, 예술가 네트워킹</p>
+                </li>
+                <li class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    <p><span class="highlight">프리미엄 업무 공간:</span> 다양한 사무 공간, 최신 시설</p>
+                </li>
+                <li class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    <p><span class="highlight">전문적인 지원 서비스:</span> 상주 매니저, 비서 서비스</p>
+                </li>
+                <li class="content-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    <p><span class="highlight">뛰어난 입지 조건:</span> 역세권, 강남 접근성, 편의시설</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="art-focus-banner">
+            <p>🎨 리저스 유중 개발 센터는 <strong>예술가와 창작자</strong>를 위한 최적의 비즈니스 환경을 제공합니다. <strong>당신의 영감을 현실로 만드세요!</strong></p>
+        </div>
+
+        <footer class="text-center text-gray-600 mt-12 py-6 border-t border-gray-300">
+            <p>&copy; 리저스 유중 개발 센터. 창의적인 당신의 성공을 응원합니다.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
